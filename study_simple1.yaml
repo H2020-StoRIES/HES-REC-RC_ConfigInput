@@ -1,0 +1,43 @@
+base_config:
+  base_config_xls: test_bookChap_config
+  base_config_yaml: test_bookChap_config
+  force_reload: false
+study_mode:
+  param_range: false
+  run_dict: true
+study_param_range:
+  CBD:
+    Day:
+    - 51
+study_run_dicts:
+  run_01:
+    BAT_ESSm:
+      Ness: 83
+      PNominal: 6806
+    PCM_ESS:
+      Ness: 28
+      PNominal: 1400
+    SC_ESSm:
+      PNominal: 0
+    
+  run_02:
+    BAT_ESSm:
+      Ness: 90
+      PNominal: 7380
+    PCM_ESS:
+      Ness: 36
+      PNominal: 1800
+    SC_ESSm:
+      PNominal: 0
+    
+  run_03:
+    BAT_ESSm:
+      Ness: 75
+      PNominal: 6150
+    PCM_ESS:
+      Ness: 22
+      PNominal: 1100
+    SC_ESSm:
+      PNominal: 0
+    
+  
