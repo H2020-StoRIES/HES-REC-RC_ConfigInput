@@ -19,7 +19,6 @@ study_run_dicts:
       PNominal: 1400
     SC_ESSm:
       PNominal: 0
-    
   run_02:
     BAT_ESSm:
       Ness: 90
@@ -29,7 +28,6 @@ study_run_dicts:
       PNominal: 1800
     SC_ESSm:
       PNominal: 0
-    
   run_03:
     BAT_ESSm:
       Ness: 75
@@ -39,5 +37,3 @@ study_run_dicts:
       PNominal: 1100
     SC_ESSm:
       PNominal: 0
-    
-  
