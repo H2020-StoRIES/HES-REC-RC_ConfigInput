@@ -1,0 +1,87 @@
+base_config:
+  base_config_xls: test_bookChap_config
+  base_config_yaml: test_bookChap_config
+  force_reload: false
+study_mode:
+  param_range: false
+  run_dict: true
+study_param_range:
+  CBD:
+    Day:
+    - 51
+    - 143
+    - 209
+    - 350
+study_run_dicts:
+  run_01:
+    BAT_ESSm:
+      Ness: 83
+      PNominal: 6806
+    PCM_ESS:
+      Ness: 28
+      PNominal: 1400
+    SC_ESSm:
+      PNominal: 0
+  run_02:
+    BAT_ESSm:
+      Ness: 88
+      PNominal: 7216
+    PCM_ESS:
+      Ness: 20
+      PNominal: 1000
+    SC_ESSm:
+      PNominal: 0
+  run_03:
+    BAT_ESSm:
+      Ness: 70
+      PNominal: 5740
+    PCM_ESS:
+      Ness: 30
+      PNominal: 1500
+    SC_ESSm:
+      PNominal: 0
+  run_04:
+    BAT_ESSm:
+      Ness: 90
+      PNominal: 7380
+    PCM_ESS:
+      Ness: 36
+      PNominal: 1800
+    SC_ESSm:
+      PNominal: 0
+  run_05:
+    BAT_ESSm:
+      Ness: 95
+      PNominal: 7790
+    PCM_ESS:
+      Ness: 28
+      PNominal: 1400
+    SC_ESSm:
+      PNominal: 0
+  run_06:
+    BAT_ESSm:
+      Ness: 85
+      PNominal: 6970
+    PCM_ESS:
+      Ness: 44
+      PNominal: 2200
+    SC_ESSm:
+      PNominal: 0
+  run_07:
+    BAT_ESSm:
+      Ness: 75
+      PNominal: 6150
+    PCM_ESS:
+      Ness: 22
+      PNominal: 1100
+    SC_ESSm:
+      PNominal: 0
+  run_08:
+    BAT_ESSm:
+      Ness: 80
+      PNominal: 6560
+    PCM_ESS:
+      Ness: 13
+      PNominal: 650
+    SC_ESSm:
+      PNominal: 0
