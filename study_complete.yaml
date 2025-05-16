@@ -33,11 +33,11 @@ study_run_dicts:
       PNominal: 0
   run_03:
     BAT_ESSm:
-      Ness: 70
-      PNominal: 5950  # 70 * 85
+      Ness: 78
+      PNominal: 6630  # 78 * 85
     PCM_ESS:
-      Ness: 30
-      PNominal: 1500
+      Ness: 36
+      PNominal: 1800
     SC_ESSm:
       PNominal: 0
   run_04:
