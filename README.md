@@ -9,8 +9,13 @@ This folder contains the main configuration files used by the simulation-optimiz
 
 ### 🔧 Study and System Configuration
 
-- **`study_file`**  
+- **`Study_difinition_X.yaml `**  
   Main YAML file defining the study scenarios, including sensitivity parameters and run configurations.
+  Where X is the location of the hybrid energy system and can be either Portici or Soria. 
+  
+  This file includes 1. parameter ranges for sensitivity analysis and 2. scenario runs. For example, the following days of the year are specified as representative cases: Day 51, 143, 209 and 350. Each scenario is evaluated using different configurations, such as varying the number of energy storage systems and their nominal power. The base study file uploaded includes nine such variations.
+  Users can modify the study setup by editing the study_param_range and study_run_dicts sections in the YAML file. Adjusting these values allows for generating a variety of scenarios across different parameter ranges, while keeping the core system model fixed using default settings.
+
 
 - **``config_simulation_Portigi/Soria.xlsx`.xlsx`**  
   Excel file containing the base configuration of all system components, including loads, generators, and storage systems for either Soria or Portigi.
@@ -41,4 +46,6 @@ This folder contains the main configuration files used by the simulation-optimiz
 - To create new studies or modify existing ones, edit the `study_file` and adjust parameter ranges or scenario lists.
 - For system changes (e.g., number of ESS units, power ratings), update `test_bookChap_config.xlsx` and regenerate the corresponding YAML file.
 - Ensure the naming in the translation dictionaries remains consistent to support bidirectional mapping between Simulink and Python modules.
-- Days should be chosen among the proposed representitive days ones in the study files i.e., Day 51, 143, 209, 350 for Soria or Day 62, 120, 233, 327, 356 for Portici.
+- Days should be chosen among the proposed representitive days ones in the `Study_difinition_X.yaml ` i.e., Day 51, 143, 209, 350 for Soria or Day 62, 120, 233, 327, 356 for Portici.
+- In `Study_difinition_X.yaml `, `base_config_xls` section should be filled with the related `config_simulation_Portigi/Soria.yaml` file name.
+`base_config_xls` specifies the main XLS configuration file name. Users can modify this file to change the pipeline configuration.`base_config_yaml`is initially empty; when the pipeline is executed, a YAML file with the same this name. If `base_config_yaml` remains empty, it indicates that the YAML file has not yet been generated. Both `base_config_xls` and `base_config_yaml` should share the same base name to ensure consistency.

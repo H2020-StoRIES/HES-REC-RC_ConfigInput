@@ -9,7 +9,7 @@ info:
     \ base name as the XLS file is generated, and `base_config_yaml` is updated with\
     \ this name. \nIf `base_config_yaml` remains empty, it indicates that the YAML\
     \ file has not yet been generated. \nBoth `base_config_xls` and `base_config_yaml`\
-    \ should share the same base name to ensure consistency.base_config:\n"
+    \ should share the same base name to ensure consistency.\n"
 study_mode:
   param_range: false
   run_dict: true
