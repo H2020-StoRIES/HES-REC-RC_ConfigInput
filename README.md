@@ -1,20 +1,43 @@
+
+# Configuration Folder
+
+This folder contains the main configuration files used by the simulation-optimization pipeline. These files define the study structure, system setup, optimization parameters, and mappings between Python and Simulink variables.
+
+---
+
+## 📁 Contents
+
+### 🔧 Study and System Configuration
+
 - **`study_file`**  
-  The main study file describing the overall study configuration.
+  Main YAML file defining the study scenarios, including sensitivity parameters and run configurations.
 
 - **`test_bookChap_config.xlsx`**  
-  The primary configuration file containing the base case setup for all components.
+  Excel file containing the base configuration of all system components, including loads, generators, and storage systems.
 
 - **`test_bookChap_config.yaml`**  
-  YAML version of the `test_bookChap_config.xlsx` file.
+  YAML version of the base system configuration, auto-generated from the Excel file and used as input to Simulink.
 
-- **`TP_xx.csv`**  
-  Time series datasets used in the study, corresponding to various configuration parameters.
+- **`Timeseries`**  
+  Containing `TP_xx.csv` Time-series profile files for simulation inputs, such as load demand or renewable generation.
+
+---
+
+### ⚙️ Optimization and Mapping Files
 
 - **`Config_Opt.xlsx`**  
-  Main configuration file for the optimization setup.
+  Excel file defining optimization parameters, including objective function weights, efficiency values, and operational limits.
 
 - **`Transdict1.xlsx`**  
-  Translation dictionary mapping Simulink notations to optimization module variables.
+  Mapping of Simulink variable names to internal variable names used in the optimization module.
 
 - **`Transdict2.xlsx`**  
-  Translation dictionary mapping optimization module variables to Simulink notations.
+  Mapping of internal optimization variable names back to Simulink variables for data exchange and control reference.
+
+---
+
+## 📝 Notes
+
+- To create new studies or modify existing ones, edit the `study_file` and adjust parameter ranges or scenario lists.
+- For system changes (e.g., number of ESS units, power ratings), update `test_bookChap_config.xlsx` and regenerate the corresponding YAML file.
+- Ensure the naming in the translation dictionaries remains consistent to support bidirectional mapping between Simulink and Python modules.
