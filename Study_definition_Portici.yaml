@@ -1,0 +1,105 @@
+base_config:
+  base_config_xls: config_simulation_Portigi
+  base_config_yaml: config_simulation_Portigi
+  force_reload: false
+info:
+  description: "`base_config_xls` specifies the main XLS configuration file name.\
+    \ Users can modify this file to change the pipeline configuration. \n`base_config_yaml`\
+    \ is initially empty; when the pipeline is executed, a YAML file with the same\
+    \ base name as the XLS file is generated, and `base_config_yaml` is updated with\
+    \ this name. \nIf `base_config_yaml` remains empty, it indicates that the YAML\
+    \ file has not yet been generated. \nBoth `base_config_xls` and `base_config_yaml`\
+    \ should share the same base name to ensure consistency.\n"
+study_mode:
+  param_range: false
+  run_dict: true
+study_param_range:
+  CBD:
+    Day:
+    - 62
+    - 120
+    - 233
+    - 327
+    - 356
+study_run_dicts:
+  run_01:
+    BAT_ESSm:
+      Ness: 83
+      PNominal: 7055
+    PCM_ESS:
+      Ness: 28
+      PNominal: 1400
+    SC_ESSm:
+      PNominal: 0
+  run_02:
+    BAT_ESSm:
+      Ness: 88
+      PNominal: 7480
+    PCM_ESS:
+      Ness: 20
+      PNominal: 1000
+    SC_ESSm:
+      PNominal: 0
+  run_03:
+    BAT_ESSm:
+      Ness: 78
+      PNominal: 6630
+    PCM_ESS:
+      Ness: 36
+      PNominal: 1800
+    SC_ESSm:
+      PNominal: 0
+  run_04:
+    BAT_ESSm:
+      Ness: 90
+      PNominal: 7650
+    PCM_ESS:
+      Ness: 36
+      PNominal: 1800
+    SC_ESSm:
+      PNominal: 0
+  run_05:
+    BAT_ESSm:
+      Ness: 95
+      PNominal: 8075
+    PCM_ESS:
+      Ness: 28
+      PNominal: 1400
+    SC_ESSm:
+      PNominal: 0
+  run_06:
+    BAT_ESSm:
+      Ness: 85
+      PNominal: 7225
+    PCM_ESS:
+      Ness: 44
+      PNominal: 2200
+    SC_ESSm:
+      PNominal: 0
+  run_07:
+    BAT_ESSm:
+      Ness: 75
+      PNominal: 6375
+    PCM_ESS:
+      Ness: 22
+      PNominal: 1100
+    SC_ESSm:
+      PNominal: 0
+  run_08:
+    BAT_ESSm:
+      Ness: 80
+      PNominal: 6800
+    PCM_ESS:
+      Ness: 13
+      PNominal: 650
+    SC_ESSm:
+      PNominal: 0
+  run_09:
+    BAT_ESSm:
+      Ness: 70
+      PNominal: 5950
+    PCM_ESS:
+      Ness: 30
+      PNominal: 1500
+    SC_ESSm:
+      PNominal: 0
